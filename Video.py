@@ -6,6 +6,7 @@ url = input("YouTube URL: ")
 
 ydl_opts = {
     "format": "bestvideo+bestaudio/best",
+    "cookiesfrombrowser": ("firefox",),
     "noplaylist": True,
     "outtmpl": r"D:\Youtube\Downloads\%(title)s.%(ext)s",
 }
